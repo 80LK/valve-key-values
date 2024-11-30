@@ -1,7 +1,17 @@
 {
   "name": "valve-key-values",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple parser of the KeyValues format from Valve",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/80LK/valve-key-values.git"
+  },
+  "keywords": [
+    "keyvalues",
+    "valve",
+    "vdf",
+    "steam"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
