@@ -1,0 +1,18 @@
+{
+  "name": "valve-key-values",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "node --enable-source-maps dist/index.test.js"
+  },
+  "author": "80LK",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.1"
+  }
+}

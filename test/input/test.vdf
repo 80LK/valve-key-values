@@ -1,0 +1,20 @@
+"test1"			"value1"
+"test2"			"value2"
+"test\"4"		"value2"
+"test3"
+{
+	"subtest1"		"value3"
+	"subtest3"		"value3\""
+	"subtest4"		"value3{\{\}}"
+	"subtest2"
+	{
+		"subsub"		"value4"
+		"deep"
+		{
+			"0"
+			{
+				"asd"		"asd"
+			}
+		}
+	}
+}
