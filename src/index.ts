@@ -38,6 +38,7 @@ namespace VKV {
 					if (char == "\\" && !escape) {
 						escape = true;
 						char = input[++current];
+						value += "\\";
 						continue;
 					}
 					value += char;
@@ -91,7 +92,7 @@ namespace VKV {
 			switch (token.type) {
 				case TokenType.String:
 				case TokenType.Word:
-					return token.value
+					return token.value.toLowerCase();
 				default:
 					throw new Error(`Unexpected token type: ${token.type}`);
 			}
@@ -102,7 +103,7 @@ namespace VKV {
 			switch (token.type) {
 				case TokenType.String:
 				case TokenType.Word:
-					return token.value
+					return token.value;
 				case TokenType.ObjectOpen:
 					const obj: any = {};
 					while (tokens[current].type != TokenType.ObjectClose) {
@@ -140,9 +141,7 @@ namespace VKV {
 		let output = "";
 
 		function stringifyString(value: string) {
-			return `"${value.replace(/\"/g, (match) => {
-				return `\\${match}`;
-			})}"`;
+			return `"${value}"`;
 		}
 
 		function strigifyObject(root: VDFObject, nested: number = 1) {

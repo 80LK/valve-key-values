@@ -6,6 +6,7 @@
 	"subtest1"		"value3"
 	"subtest3"		"value3\""
 	"subtest4"		"value3{\{\}}"
+	"subtest5"		"value\\5"
 	"subtest2"
 	{
 		"subsub"		"value4"

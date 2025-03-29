@@ -18,11 +18,12 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "test": "node --enable-source-maps dist/index.test.js"
+    "test": "npm run build && node --enable-source-maps dist/index.test.js"
   },
   "author": "80LK",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.10.1"
+    "@types/node": "^22.10.1",
+    "typescript": "^5.8.2"
   }
 }
