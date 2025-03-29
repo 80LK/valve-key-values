@@ -1,6 +1,6 @@
 {
   "name": "valve-key-values",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple parser of the KeyValues format from Valve",
   "repository": {
     "type": "git",
